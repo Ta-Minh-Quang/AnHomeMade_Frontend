@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+:root{
+    --main-color:rgb(255 254 244);
+    --second-color:#B0A171;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f2da;
+}
+.banner .swiper{
+    height: 100% !important;
+}
+.product-list  .swiper-slide{
+    width: 300px !important; 
+    height:auto
+}
+.product-list .swiper-slide{
+    margin-right: 15px !important;
+}
+.banner-text{
+    text-shadow: 12px 12px 0px rgba(0,0,0,0.3);
+}
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px ;
+}
+.pagination .selected{
+    color: #B0A171;
+}
+.react-confirm-alert{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 400px;
+    padding: 30px;
+    text-align: left;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 20px 75px rgba(0, 0, 0, 0.13);
+    color: #666;
+  }
+.react-confirm-alert .btn-reject{
+      background-color: red;
+      margin-right: 5px;
+      padding: 3px 8px;
+      color: white;
+      border-radius: 5px;
+  }
+  .react-confirm-alert .btn-accept{
+    background-color: rgb(62, 185, 62);
+    margin-right: 5px;
+    padding: 3px 8px;
+    color: white;
+    border-radius: 5px;
+}
+.custom-ui{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.pagination.user {
+    color: #B0A171;
+}
+.pagination.user .selected{
+    border-radius: 100%;
+    background-color: #B0A171;
+    color: white;
+    padding: 2px 10px;
+}
+.skeleton{
+    background-color: #eee;
+    background-image: linear-gradient(110deg, #ececec 8%,#f5f5f5 18%,#ececec 33%);
+    /* border-radius: 5px; */
+    background-size: 200% 100%;
+    animation: 1.5s shine linear infinite;
+}
+@keyframes shine {
+    to{
+        background-position-x:-200% ;
+    }
+    
+}
